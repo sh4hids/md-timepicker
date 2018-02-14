@@ -78,7 +78,6 @@
   display: inline-block;
   height: 36px;
   background: #FFFFFF;
-  min-width: 120px;
   align-items: center;
   z-index: 1230;
 }
@@ -98,4 +97,8 @@
   font-size: 20px;
   margin: 8px 5px 0 3px;
   color: #0071BC;
+}
+
+.time-list.myTimeList.md-active {
+  top: 0;
 }

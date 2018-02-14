@@ -3,10 +3,13 @@
   angular.module('myApp').directive('mdTimepicker', mdTimepicker);
 
   function mdTimepicker($filter) {
+    var attr;
     return {
       restrict: 'E',
       require: 'ngModel',
       replace: true,
+      scope: {customClass: '@customClass'},
+      templateUrl: './md-timepicker/md-timepicker.html',
       link: function(scope, element, attrs, ngModel) {
         scope.time = moment().second(0).milliseconds(0).toDate();
         if (!scope.timings) {
@@ -31,8 +34,7 @@
           }
           scope.generateTimings(60);
         }
-      },
-      templateUrl: './md-timepicker/md-timepicker.html'
+      }
     };
   }
 
