@@ -1,58 +1,58 @@
-#md-timepicker {
+md-timepicker .md-timepicker {
   border: 1px solid #DDDDDD;
   border-radius: 3px;
   padding: 6px 0;
 }
-#md-timepicker .time-keyboard {
+md-timepicker .md-timepicker .time-keyboard {
   padding: 5px;
   margin: 0;
 }
-#md-timepicker .time-keyboard input {
+md-timepicker .md-timepicker .time-keyboard input {
   border: none;
   margin-bottom: 4px;
   font-size: 12px;
 }
-#md-timepicker .time-keyboard input[type="time"] {
+md-timepicker .md-timepicker .time-keyboard input[type="time"] {
   clip-path: inset(0 18px 0 0);
   width: 95px;
 }
-#md-timepicker .time-keyboard input[type="time"]::-webkit-clear-button, #md-timepicker .time-keyboard input[type="time"]::-ms-clear {
+md-timepicker .md-timepicker .time-keyboard input[type="time"]::-webkit-clear-button, md-timepicker .md-timepicker .time-keyboard input[type="time"]::-ms-clear {
   display: none;
 }
-#md-timepicker .time-keyboard input[type=time]::-webkit-inner-spin-button,
-#md-timepicker .time-keyboard input[type=time]::-webkit-outer-spin-button, #md-timepicker .time-keyboard input[type="time"]::-webkit-clear-button {
+md-timepicker .md-timepicker .time-keyboard input[type=time]::-webkit-inner-spin-button,
+md-timepicker .md-timepicker .time-keyboard input[type=time]::-webkit-outer-spin-button, md-timepicker .md-timepicker .time-keyboard input[type="time"]::-webkit-clear-button {
   -webkit-appearance: none;
   margin: 0;
   display: none;
 }
-#md-timepicker .time-keyboard .md-errors-spacer {
+md-timepicker .md-timepicker .time-keyboard .md-errors-spacer {
   min-height: 0;
   display: none;
 }
-#md-timepicker .time-dropdown {
+md-timepicker .md-timepicker .time-dropdown {
   width: 20px;
   margin: 0;
 }
-#md-timepicker .time-dropdown .md-select-value {
+md-timepicker .md-timepicker .time-dropdown .md-select-value {
   min-width: 14px;
   min-height: 14px;
   border-bottom: none;
   margin-bottom: 2px;
 }
-#md-timepicker .time-dropdown .md-select-value .md-select-icon {
+md-timepicker .md-timepicker .time-dropdown .md-select-value .md-select-icon {
   position: absolute;
   width: auto;
   margin: 0;
   left: -5px;
 }
-#md-timepicker .time-dropdown .md-select-value .md-select-icon::after {
+md-timepicker .md-timepicker .time-dropdown .md-select-value .md-select-icon::after {
   font-size: 16px;
   color: #0071BC;
 }
-#md-timepicker .md-select-value > span:not(.md-select-icon) .md-text {
+md-timepicker .md-timepicker .md-select-value > span:not(.md-select-icon) .md-text {
   display: none;
 }
-#md-timepicker .time-keyboard, #md-timepicker .time-dropdown {
+md-timepicker .md-timepicker .time-keyboard, md-timepicker .md-timepicker .time-dropdown {
   font-size: 12px;
 }
 
@@ -60,9 +60,6 @@
   position: absolute;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-}
-.time-list md-select-menu md-content {
-  padding-top: 36px;
 }
 .time-list md-select-menu md-content md-option {
   text-align: center;
@@ -75,7 +72,7 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
-  display: inline-block;
+  display: none;
   height: 36px;
   background: #FFFFFF;
   align-items: center;
@@ -99,6 +96,3 @@
   color: #0071BC;
 }
 
-.time-list.myTimeList.md-active {
-  top: 0;
-}

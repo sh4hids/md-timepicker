@@ -1,67 +1,67 @@
-#md-timepicker {
-  border: 1px solid #DDDDDD;
-  border-radius: 3px;
-  padding: 6px 0;
+md-timepicker {
+  .md-timepicker {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    padding: 6px 0;
 
-  .time-keyboard {
-    padding: 5px;
-    margin: 0;
-    input {
-      border: none;
-      margin-bottom: 4px;
-      font-size: 12px;
-    }
-    input[type="time"] {
-      clip-path: inset(0 18px 0 0);
-      width: 95px;
-    }
-    input[type="time"]::-webkit-clear-button, input[type="time"]::-ms-clear {
-      display: none;
-    }
-
-    input[type=time]::-webkit-inner-spin-button,
-    input[type=time]::-webkit-outer-spin-button, input[type="time"]::-webkit-clear-button {
-      -webkit-appearance: none;
+    .time-keyboard {
+      padding: 5px;
       margin: 0;
-      display: none;
-    }
+      input {
+        border: none;
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+      input[type="time"] {
+        clip-path: inset(0 18px 0 0);
+        width: 95px;
+      }
+      input[type="time"]::-webkit-clear-button, input[type="time"]::-ms-clear {
+        display: none;
+      }
 
-    .md-errors-spacer {
-      min-height: 0;
-      display: none;
-    }
-  }
-  .time-dropdown {
-    width: 20px;
-    margin: 0;
-
-    .md-select-value {
-      min-width: 14px;
-      min-height: 14px;
-      border-bottom: none;
-      margin-bottom: 2px;
-      .md-select-icon {
-        position: absolute;
-        width: auto;
+      input[type=time]::-webkit-inner-spin-button,
+      input[type=time]::-webkit-outer-spin-button, input[type="time"]::-webkit-clear-button {
+        -webkit-appearance: none;
         margin: 0;
-        left: -5px;
-        &::after {
-          font-size: 16px;
-          color: #0071BC;
+        display: none;
+      }
+
+      .md-errors-spacer {
+        min-height: 0;
+        display: none;
+      }
+    }
+    .time-dropdown {
+      width: 20px;
+      margin: 0;
+
+      .md-select-value {
+        min-width: 14px;
+        min-height: 14px;
+        border-bottom: none;
+        margin-bottom: 2px;
+        .md-select-icon {
+          position: absolute;
+          width: auto;
+          margin: 0;
+          left: -5px;
+          &::after {
+            font-size: 16px;
+            color: #0071BC;
+          }
         }
       }
     }
-  }
 
+    .md-select-value > span:not(.md-select-icon) .md-text {
+      display: none;
+    }
 
-
-  .md-select-value > span:not(.md-select-icon) .md-text {
-    display: none;
-  }
-
-  .time-keyboard, .time-dropdown {
-    font-size: 12px;
-    //border: none;
+    .time-keyboard, .time-dropdown {
+      font-size: 12px;
+      //border: none;
+    }
   }
 }
 
@@ -71,7 +71,7 @@
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     md-content {
-      padding-top: 36px;
+      //padding-top: 36px;
       md-option {
         text-align: center;
         .md-text {
@@ -84,7 +84,8 @@
       top: 0;
       left: 0;
       box-sizing: border-box;
-      display: inline-block;
+      display: none;
+      //display: inline-block;
       height: 36px;
       background: #FFFFFF;
       align-items: center;
@@ -111,6 +112,7 @@
 }
 
 // set top position of dropdown menu here
-.time-list.myTimeList.md-active {
-  top: 207px !important;
+
+.time-list.md-active {
+
 }
