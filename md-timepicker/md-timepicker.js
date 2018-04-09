@@ -43,7 +43,7 @@
       },
       template: '<span class="md-timepicker">' +
       '<md-input-container class="time-keyboard">' +
-      '<input type="time" name="input" ng-model="ngModel" min="00:00" max="23:59"/>' +
+      '<input type="time" name="input" ng-model="ngModel"/>' +
       '</md-input-container>' +
       '<md-input-container class="time-dropdown">' +
       '<md-select ng-model="ngModel" md-container-class="time-list {{dropdownClass}}">' +
